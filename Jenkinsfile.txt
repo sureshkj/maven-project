@@ -4,6 +4,6 @@ node{
 	}
 	stage('package'){
 	set mavencmd = tool name: 'localmaven', type: 'maven'
-	echo "%{mavencmd}% package"
+	bat "%mavencmd% package"
 	}
 }
