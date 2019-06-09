@@ -3,7 +3,6 @@ node{
 	git 'https://github.com/sureshkj/maven-project.git'
 	}
 	stage('package'){
-	set mavencmd = tool name: 'localmaven', type: 'maven'
-	bat "%mavencmd% package"
+		bat "mvn package"
 	}
 }
