@@ -3,6 +3,6 @@ node{
 	git 'https://github.com/sureshkj/maven-project.git'
 	}
 	stage('package'){
-		bat "mvn package"
+		bat "mvn install"
 	}
 }
